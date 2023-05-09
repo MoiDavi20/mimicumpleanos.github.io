@@ -1,0 +1,245 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+        background: linear-gradient(rgb(79, 9, 76),rgb(136, 7, 130),rgb(79, 9, 76))
+        no-repeat fixed center center;
+        background-size: 100% 100%;
+        width: 100%;
+        
+}
+.indice{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        top: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        background: linear-gradient(rgba(130, 100, 130, 0.8),rgba(202, 181, 201,.8));
+        z-index: 100;
+}
+
+.indice .img1{
+        width: 30%;
+        height: 88%;
+}
+.tope{
+        display: flex;
+}
+.tope li{
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 10px 10px 15px 20px;
+        list-style: none;
+        padding: 10px;
+        transition: .5s;
+        font-size: 120%;
+}
+.tope li:hover{
+        background: rgb(228, 202, 227);
+        border-radius: 10px 10px 15px 20px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, .8);
+}
+
+.desple{
+        background: linear-gradient(rgb(130, 100, 130),rgb(202, 181, 201));
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: -20;
+        width: 95%;
+        height: auto;
+        border-radius: 0 0 20px 20px;
+        top: 0;
+        left: 2.5%;
+        padding: 25px;
+        transition: 1s;
+}
+.globos:nth-child(1){
+        width: 10%;
+        height:120%;
+        position: absolute;
+        top: 0;
+        left: -2%;
+}
+.globos:nth-child(2){
+        width: 10%;
+        height:120%;
+        position: absolute;
+        top: 0;
+        right: -2%;
+}
+
+li:hover .desple{
+        display: flex;
+        position: absolute;
+        animation: mover  1s alternate;
+        top: 100%;
+        transition: 1s;
+}
+
+.indice .desple .img2:nth-child(3){
+        width: 15%;
+        height: 20%;
+}
+.indice .desple .img2:nth-child(5){
+        width: 10%;
+        height: 15%;
+}
+
+.cont{
+        margin-top: 10.4%;
+        color: white;
+        width: 100%;
+        height: auto;
+}
+.cont .gif{
+        float: right;
+        width: 50%;
+        border: 1px solid black;
+        padding: 5px;
+}
+.cont .gif img{
+        width: 100%;
+        height: 100%;
+}
+.cont h1{
+        padding: 10px;
+        font-size: 100%;
+        text-align: center;
+}
+.cont p{
+        padding: 10px;
+        text-align: center;
+        font-size: 110%;
+}
+.cont  .cubo .torta{
+        width: 30%;
+        height: 30%;
+}
+.cont .cubo{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+}
+.cont1{
+        width: 50%;
+}
+.cont2{
+        width: 100%;
+        display: flex;
+}
+.cont .galeria{
+        background: linear-gradient(rgb(0,0,0),rgb(181, 180, 180),rgb(0,0,0));
+        width: 50%;
+        height: auto;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        vertical-align: top;
+
+}
+.cont .tamaño{
+        width: 22%;
+        height: auto;
+        margin: .5%;
+        opacity: .6;
+        padding: 2px;
+        vertical-align: top;
+        transition: .5s;
+}
+.cont .tamaño:hover{
+        opacity: 1;
+        border: 1px solid white;
+        width: 23%;
+}
+.cont .poema{
+        width: 50%;
+        padding: 10px;
+}
+.cont .poema p{
+        padding: 0;
+        font-size: 1.1rem;
+}
+.cont .poema h2{
+        font-size: 110%;
+        text-align: center;
+}
+.cont .poema .imga{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+}
+.cont .poema .imga img:nth-child(1){
+        width: 30%;
+        height: auto;
+}
+.cont .poema .imga img:nth-child(2){
+        width: 20%;
+        height: auto;
+}
+
+footer{
+        background: #000;
+        margin-top: 15px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        color: white;
+        padding: 2%;
+}
+footer p{
+        font-size: 110%;
+        margin: 10px;
+}
+footer img{
+        width: 40%;
+        height: auto;
+}
+
+@media (max-width: 500px){
+        .indice p{
+                font-size: 70%;
+        }
+        .cont{
+                margin-top: 15%;
+        }
+        .cont .gif{
+                width: 100%;
+                float: left;
+        }
+        .cont .cont1 h1{
+                font-size: 220%;
+        }
+        .cont .cont1{
+                width: 100%;
+        }
+        .cont .galeria{
+                width: 96%;
+        }
+        .cont  .poema{
+                width: 100%;
+        }
+        .cont2{
+                flex-direction: column;
+        }
+        .cont .poema h2{
+                font-size: 220%;
+                text-align: center;
+        }
+        footer p{
+                font-size: 90%;
+                margin: 10px;
+        }
+}
